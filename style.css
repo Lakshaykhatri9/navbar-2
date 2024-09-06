@@ -1,0 +1,58 @@
+* {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+.hamburger .common {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.hamburger .top_line {
+  top: 20%;
+}
+
+.hamburger .middle_line {
+  top: 50%;
+}
+
+.hamburger .bottom_line {
+  top: 80%;
+}
+
+.navbar {
+  color: #fff;
+  position: fixed;
+  top: 3rem;
+  right: -70%;
+  width: 70%;
+  height: 100%;
+  transition: 0.7s ease;
+}
+
+input:checked ~ .hamburger .top_line {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+input:checked ~ .hamburger .middle_line {
+  display: none;
+}
+
+input:checked ~ .hamburger .bottom_line {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
+input:checked ~ .navbar {
+  right: 0;
+  transition: 0.7s ease;
+}
