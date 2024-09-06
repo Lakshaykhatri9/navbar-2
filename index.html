@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mansha</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hamburger Menu</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/mansha logo.png">
 </head>
 <body>
-    <header>
-        <nav class="h-36 bg-[#144168] flex items-center">
-            <div class="mansha-logo px-10 z-10">
-                <img src="images/mansha logo.png" alt="LOGO" class="w-24">
-            </div>
-            <label class="">
-                <input type="checkbox" class="absolute right-5 top-10">
-            <div class="hamburger w-8 h-8 z-10 cursor-pointer absolute right-10 top-10">
-                <span class="top_line common"></span>
-                <span class="middle_line common"></span>
-                <span class="bottom_line common"></span>
-            </div>
-       
+    <!-- Hamburger Icon -->
+     <header>
+        <nav>
+            <div class="mansha-logo">
+            <img src="images/mansha logo.png" alt="LOGO">
+        </div>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 
-            <ul class="navbar space-y-5 p-10 bg-[#144168] uppercase mt-10 md:mt-0 font-bold">
-                <h1 class="uppercase text-4xl hidden lg:block absolute top-0">Mansha logo</h1>
-                <li>Home</li>
-                <li>About us</li>
-                <li class="cursor-pointer">Residential</li>
-                <li>Commercial</li>
-                <li>Awards & Accolades</li>
-                <li>Testimonial</li>
-                <li>Disclaimer</li>
-                <li>Contact us</li>
-            </ul>
-        </label>
-        </nav>
-    </header>
+    <!-- Side Navigation -->
+    <div id="navbar" class="navbar">
+        <div class="mansha-logo-nav">
+            <img src="images/mansha logo.png" alt="LOGO">
+        </div>
+        <li><a href="#" class="home">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#" class="project">Projects</a></li>
+        <div class="resi-div">
+            <p class="resi-para">Residential</p>
+        </div>
+        <li><a href="#">Commercial</a></li>
+        <li><a href="#">Awards & Accolades</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Disclaimer</a></li>
+        <li><a href="#">Contact us</a></li>
+    </div>
+</nav>
+</header>
     <script src="script.js"></script>
 </body>
 </html>
