@@ -1,43 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburger Menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- Hamburger Icon -->
-     <header>
-        <nav>
-            <div class="mansha-logo">
-            <img src="images/mansha logo.png" alt="LOGO">
+    <header>
+      <nav>
+        <div class="mansha-logo">
+          <img src="images/mansha logo.png" alt="LOGO" />
         </div>
-    <div class="hamburger" id="hamburger" onclick="toggleNav()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
+        <div class="hamburger" id="hamburger" onclick="toggleNav()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
 
-    <!-- Side Navigation -->
-    <div id="navbar" class="navbar">
-        <div class="mansha-logo-nav">
-            <img src="images/mansha logo.png" alt="LOGO">
+        <!-- Side Navigation -->
+        <div id="navbar" class="navbar">
+          <div class="mansha-logo-nav">
+            <img src="images/mansha logo.png" alt="LOGO" />
+          </div>
+          <div>
+          <li><a href="#" class="home animated-border">Home</a></li>
+          <li><a href="#" class="animated-border">About us</a></li>
+          <li>
+            <span class="faq-item">
+              <span class="faq-question resi animated-border" onclick="toggleAnswer(this)">
+                Residential
+              </span>
+              <span class="resi faq-answer">
+                <span class="ongoing animated-border">ONGOING</span>
+                <span class="del animated-border">DELIVERED</span>
+              </span>
+            </span>
+
+          </li>
+          <li>
+            <span class="faq-item">
+              <span class="faq-question animated-border" onclick="toggleAnswer(this)">
+                Commercial
+              </span>
+              <span class="resi faq-answer animated-border">
+                &nbsp;&nbsp;&nbsp;<span class="ongoing">Vega street</span>
+                <br />
+              </span>
+            </span>
+          </li>
+          <li class="animated-border"><a href="#">Awards & Accolades</a></li>
+          <li class="animated-border"><a href="#">Testimonials</a></li>
+          <li class="animated-border"><a href="#">Disclaimer</a></li>
+          <li class="animated-border"><a href="#">Contact us</a></li>
         </div>
-        <li><a href="#" class="home">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#" class="project">Projects</a></li>
-        <div class="resi-div">
-            <p class="resi-para">Residential</p>
+
+        <div class="table-div">
+          <table class="table-1 table-1-hide">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td>11</td>
+      </tr>
+          </table>
         </div>
-        <li><a href="#">Commercial</a></li>
-        <li><a href="#">Awards & Accolades</a></li>
-        <li><a href="#">Testimonial</a></li>
-        <li><a href="#">Disclaimer</a></li>
-        <li><a href="#">Contact us</a></li>
-    </div>
-</nav>
-</header>
+
+        <div class="table-div-2">
+          <table class="table-2 table-2-hide">
+            <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+
+            <tr>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+          </tr>
+
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+          <td>10</td>
+          <td>11</td>
+      </tr>
+          </table>
+        </div>
+
+        </div>
+      </nav>
+    </header>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

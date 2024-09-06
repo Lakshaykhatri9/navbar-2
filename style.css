@@ -38,7 +38,7 @@ nav{
   height: 30px;
   position: fixed;
   top: 9%;
-  right: 20px;
+  right: 100px;
   cursor: pointer;
   z-index: 10;
 }
@@ -86,6 +86,9 @@ nav{
   overflow-x: hidden;
   transition: 0.5s;
   padding: 60px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: flex;
 }
 
 .navbar a {
@@ -95,7 +98,7 @@ nav{
   color: white;
   display: block;
   transition: 0.3s;
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 .home{
@@ -104,12 +107,13 @@ nav{
 
 li{
   list-style: none;
+  width: 19rem;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #fff;
   color: black;
-}
+} */
 
 /* Show Navbar when clicked */
 .navbar.active {
@@ -117,16 +121,18 @@ li{
   right: 0%;
 }
 
-.resi-div-hide{
-  display: none;
+.ongoing{
+  font-size: 20px;
+  height: 30px;
+  margin-left: 20px;
 }
 
-.resi-para{
-  font-size: 22px;
-  color: white;
-  display: block;
+.del{
+  font-size: 20px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
-
 
 @media(min-width:300px) {
   .navbar {
@@ -140,4 +146,144 @@ li{
     transition: 0.5s;
     padding: 60px;
   }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 9%;
+    right: 50px;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+/* Basic Styling */
+
+
+
+/* FAQ container */
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* FAQ item */
+.faq-item {
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* FAQ question */
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  background-color: #144168;
+  font-size: 22px;
+  color: white;
+  display: block;
+  transition: 1s ease;
+}
+
+/* FAQ answer */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #144168;
+  transition: 0.7s ease;
+  font-size: 22px;
+  color: white;
+  display: block;
+}
+
+/* FAQ answer when active (revealed) */
+.faq-item.active .faq-answer {
+  padding: 15px;
+  max-height: 100px; /* Adjust based on content height */
+}
+
+.animated-border {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.animated-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.4s ease-in-out;
+}
+
+.animated-border:hover::after {
+  width: 100%;
+}
+
+.ongoing{
+  cursor: pointer;
+}
+
+.table-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  color: #fff;
+  margin-right: 10pox;
+}
+
+.table-1-hide{
+  display: none;
+}
+
+.table-1 tr td{
+  width: 10rem;
+  border: 2px solid rgb(255, 255, 255);
+  height: 8rem;
+  text-align: center;
+}
+
+.table-div-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 1rem;
+  color: #fff;
+  margin-right: 10pox;
+}
+
+.table-2-hide{
+  display: none;
+}
+
+.table-2 tr td{
+  width: 10rem;
+  border: 2px solid rgb(255, 255, 255);
+  height: 8rem;
+  text-align: center;
+}
+
+@media (max-width: 1069px){
+  .table-div{
+    position: absolute;
+    top: 47rem;
+    bottom: 0;
+  }  
+
+  .table-div-2{
+    position: absolute;
+    top: 47rem;
+    bottom: 0;
+  }  
 }
