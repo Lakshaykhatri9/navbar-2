@@ -272,6 +272,11 @@ li{
   border-right-color: #637F97;
 }
 
+.border-table-2{
+  border-right: 1px solid #637F97;
+  border-bottom: 1px solid #637F97;
+}
+
 .address{
   font-size: 16px;
   color: white;
