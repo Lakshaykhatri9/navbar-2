@@ -36,7 +36,7 @@ nav{
   justify-content: space-between;
   width: 35px;
   height: 30px;
-  position: fixed;
+  position: absolute;
   top: 9%;
   right: 100px;
   cursor: pointer;
@@ -235,9 +235,8 @@ li{
 }
 
 .table-1 tr td{
-  width: 10rem;
-  border: 2px solid rgb(255, 255, 255);
-  height: 8rem;
+  width: 14rem;
+  height: 10rem;
   text-align: center;
 }
 
@@ -262,6 +261,17 @@ li{
   text-align: center;
 }
 
+.address{
+  font-size: 16px;
+  color: white;
+  display: block;
+  font-weight: 700;
+}
+
+.address-img{
+  width: 10rem;
+}
+
 @media(max-width: 425px){
   .navbar {
     height: 100%;
@@ -276,7 +286,6 @@ li{
     text-transform: uppercase;
     font-weight: 500;
     display: flex;
-    justify-content: center;
   }
 }
 
