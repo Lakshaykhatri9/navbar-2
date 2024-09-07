@@ -29,13 +29,24 @@ let ongoing = document.querySelector(".ongoing");
 let resi = document.querySelector(".resi");
 let del = document.querySelector(".del");
 let table_2 = document.querySelector(".table-2")
+let vega = document.querySelector(".vega-street");
+let comm = document.querySelector(".comm");
+let ongoing_2 = document.querySelector(".ongoing-2")
 
 ongoing.addEventListener("click", () => {
     table.classList.toggle("table-1-hide");
     table_2.classList.add("table-2-hide");
+    vega.classList.add("vega-street-hide");
 });
 
 del.addEventListener("click",() => {
    table_2.classList.toggle("table-2-hide");
    table.classList.add("table-1-hide");
+   vega.classList.add("vega-street-hide");
 });
+
+ongoing_2.addEventListener("click", () => {
+    vega.classList.toggle("vega-street-hide");
+    table.classList.add("table-1-hide");
+    table_2.classList.add("table-2-hide");
+})
