@@ -252,6 +252,7 @@ li{
   justify-content: flex-start;
   margin-left: 1rem;
   color: #fff;
+  font-weight: 500;
   margin-right: 10pox;
 }
 
@@ -264,6 +265,10 @@ li{
   border: 2px solid rgb(255, 255, 255);
   height: 8rem;
   text-align: center;
+}
+
+.border-r{
+  border-right: 2px solid white;
 }
 
 .address{
