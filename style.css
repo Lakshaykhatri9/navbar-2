@@ -269,6 +269,7 @@ li{
 
 .border-r{
   border-right: 1px solid white;
+  border-right-color: #637F97;
 }
 
 .address{
