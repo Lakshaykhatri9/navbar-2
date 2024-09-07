@@ -107,7 +107,7 @@ nav{
 
 li{
   list-style: none;
-  width: fit-content
+  width: fit-content;
 }
 
 /* .navbar a:hover {
@@ -313,6 +313,26 @@ li{
     text-transform: uppercase;
     font-weight: 500;
     display: flex;
+  }
+}
+
+@media (max-width: 811px){
+  .table-1 tr td{
+    display: grid;
+    grid-column: auto;
+    width: fit-content;
+    border-right: none;
+    align-content: center;
+    margin-left: 2rem;
+  }
+
+  .table-2 tr td{
+    display: grid;
+    grid-column: auto;
+    width: fit-content;
+    border-right: none;
+    align-content: center;
+    margin-left: 2rem;
   }
 }
 
