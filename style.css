@@ -217,6 +217,7 @@ li{
 
 .ongoing{
   cursor: pointer;
+  width: fit-content;
 }
 
 .table-div{
