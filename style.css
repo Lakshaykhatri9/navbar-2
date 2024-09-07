@@ -254,7 +254,11 @@ li{
   margin-left: 1rem;
   color: #fff;
   font-weight: 500;
-  margin-right: 10pox;
+  margin-right: 7rem;
+}
+
+.table-2{
+  margin-top: 3rem;
 }
 
 .table-2-hide{
@@ -274,6 +278,10 @@ li{
 
 .border-table-2{
   border-right: 1px solid #637F97;
+  border-bottom: 1px solid #637F97;
+}
+
+.border-table-bottom{
   border-bottom: 1px solid #637F97;
 }
 
@@ -347,8 +355,8 @@ li{
 
   .table-div-2{
     position: absolute;
-    top: 45rem;
-    left:13px;
+    top: 47rem;
+    left:5REM;
   }  
 }
 
