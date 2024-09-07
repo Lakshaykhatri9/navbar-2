@@ -331,6 +331,12 @@ li {
   width: 16rem;
 }
 
+@media (min-width: 300px){
+  .call-icon{
+    display: none;
+  }
+}
+
 @media (max-width: 425px) {
   .navbar {
     height: 100%;
@@ -346,18 +352,20 @@ li {
     font-weight: 500;
     display: flex;
   }
-}
 
-@media (max-width:1068px){
-  
-  .vega-street{
-    position: absolute;
-    top: 40rem;
-    margin-bottom: 3rem;
+  .mansha-logo img {
+    height: 6rem;
+    width: 6rem;
+    padding: 0 2rem;
   }
-
-  .address-3{
+  
+  .mansha-logo-nav img {
     height: 8rem;
+    width: 8rem;
+    padding: 0 2rem;
+    position: absolute;
+    top: 25px;
+    left: 30px;
   }
 }
 
@@ -396,6 +404,20 @@ li {
   }
 }
 
+
+@media (max-width:1068px){
+  
+  .vega-street{
+    position: absolute;
+    top: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  .address-3{
+    height: 8rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .navbar {
     height: 100%;
@@ -410,5 +432,28 @@ li {
     text-transform: uppercase;
     font-weight: 500;
     display: flex;
+  }
+}
+
+@media (min-width: 1024px){
+  .number{
+    display: none;
+  }
+
+  .call-icon{
+    display: block;
+    position: absolute;
+    left: 86%;
+  }
+
+  .call-icon i{
+    color: #fff;
+    align-content: center;
+    cursor: pointer;
+  }
+
+  .call-icon i:hover{
+    transform: rotate(360deg);
+    transition: 2s ease;
   }
 }
