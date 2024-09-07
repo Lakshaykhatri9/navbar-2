@@ -107,7 +107,7 @@ nav{
 
 li{
   list-style: none;
-  width: 19rem;
+  width: fit-content
 }
 
 /* .navbar a:hover {
