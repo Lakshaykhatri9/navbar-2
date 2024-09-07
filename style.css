@@ -236,7 +236,7 @@ li{
 
 .table-1 tr td{
   width: 14rem;
-  height: 10rem;
+  height: 11rem;
   text-align: center;
 }
 
@@ -266,7 +266,6 @@ li{
   color: white;
   display: block;
   font-weight: 700;
-  height: 3rem;
 }
 
 .address-img{
