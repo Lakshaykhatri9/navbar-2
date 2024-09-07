@@ -239,6 +239,11 @@ li{
   display: none;
 }
 
+
+.table-div{
+  height: 55rem;
+}
+
 .table-1 tr td{
   width: 14rem;
   height: 13rem;
@@ -258,7 +263,7 @@ li{
 }
 
 .table-2{
-  margin-top: 3rem;
+  padding-bottom: 7rem;
 }
 
 .table-2-hide{
