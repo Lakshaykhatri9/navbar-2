@@ -140,7 +140,7 @@ li{
     justify-content: space-between;
     width: 35px;
     height: 30px;
-    position: fixed;
+    position: absolute;
     top: 9%;
     right: 50px;
     cursor: pointer;
@@ -275,7 +275,7 @@ li{
 }
 
 .address-img{
-  width: 9rem;
+  width: 16rem;
 }
 
 @media(max-width: 425px){
