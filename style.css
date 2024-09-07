@@ -262,16 +262,54 @@ li{
   text-align: center;
 }
 
+@media(max-width: 425px){
+  .navbar {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: -130%;
+    background-color: #144168;
+    overflow-x: hidden;
+    transition: 1s;
+    padding: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
 @media (max-width: 1069px){
   .table-div{
     position: absolute;
     top: 47rem;
     bottom: 0;
+    left:13px;
   }  
 
   .table-div-2{
     position: absolute;
     top: 47rem;
     bottom: 0;
+    left:13px;
   }  
+}
+
+@media (max-width:1200px){
+  .navbar {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    top: 0;
+    right: -130%;
+    background-color: #144168;
+    overflow-x: hidden;
+    transition: 1s;
+    padding: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+  }
 }
