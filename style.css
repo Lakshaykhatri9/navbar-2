@@ -328,7 +328,7 @@ li {
 }
 
 .address-img {
-  width: 16rem;
+  width: 14rem;
 }
 
 @media (min-width: 300px){
@@ -386,6 +386,13 @@ li {
     border-right: none;
     align-content: center;
     margin-left: 2rem;
+  }
+}
+
+@media (max-width: 815px){
+  .address-img{
+    width: 12rem;
+    height: 12rem;
   }
 }
 
