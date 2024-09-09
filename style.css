@@ -35,7 +35,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 35px;
+  width: 10px;
   height: 10px;
   cursor: pointer;
   z-index: 10;
@@ -331,7 +331,7 @@ li {
   width: 14rem;
 }
 
-@media (min-width: 300px){
+@media (min-width: 100px){
   .call-icon{
     display: none;
   }
@@ -453,10 +453,15 @@ li {
     left: 86%;
   }
 
-  .call-icon i{
+  .call-icon{
     color: #fff;
     align-content: center;
     cursor: pointer;
+  }
+
+  .call-icon-i{
+    width: 14rem;
+    height: 14rem;
   }
 
   .call-icon i:hover{
