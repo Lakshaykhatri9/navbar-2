@@ -162,7 +162,7 @@ h1{
 #submit-btn{
   padding: 1rem;
   position: absolute;
-  right: 19%;  
+  right: 0;  
   font-size: 1rem;
   border: 2px solid #00e3b2;
   color: #00e3b2;
