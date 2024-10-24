@@ -60,3 +60,9 @@
         margin-right: 100px;
     }
 }
+
+@media (max-width: 640px){
+    #submit-btn{
+        right: 0;
+    }
+}
