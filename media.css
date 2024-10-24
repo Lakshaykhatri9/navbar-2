@@ -33,6 +33,11 @@
 }
 
 @media (max-width: 1111px){
+
+    .container{
+        left: 10%;
+    }
+
     .input-1{
         width: 80vw;
         margin: 0.5rem;
