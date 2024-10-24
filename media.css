@@ -65,4 +65,13 @@
     #submit-btn{
         right: 0;
     }
+
+    header {
+        width: 100vw;
+        height: 10vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 }
