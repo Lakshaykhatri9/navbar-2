@@ -50,7 +50,7 @@
     }
 
     .form-group select {
-        width: 80vw;
+        width: 100vw;
         margin: 0.5rem;
       }
 }
