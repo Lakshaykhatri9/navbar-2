@@ -1,94 +1,3 @@
-.logo-div {
-  width: 10rem;
-  height: 4rem;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-}
-
-header {
-  width: 68vw;
-  height: 10vh;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.desktop-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-.desktop-li {
-  margin-inline: 1rem;
-  font-size: 1.5rem;
-}
-
-.hamburger {
-  margin-right: 1rem;
-  width: 30px;
-  height: 30px;
-}
-
-.line1 {
-  background-color: black;
-  width: 100%;
-  height: 3px;
-  border-radius: 30%;
-}
-
-.line2 {
-  background-color: black;
-  width: 100%;
-  height: 3px;
-  margin-top: 5px;
-  border-radius: 30%;
-}
-
-.line3 {
-  background-color: black;
-  width: 100%;
-  height: 3px;
-  margin-top: 5px;
-  border-radius: 30%;
-}
-
-.phone-nav {
-  text-align: left;
-  list-style: none;
-  width: 80vw;
-  max-height: 0;
-  overflow: hidden;
-  margin: auto;
-  font-size: 1.5rem;
-  transition: 0.5s ease;
-  z-index: 100;
-  background-color: #fff;
-}
-
-.phone-nav-show {
-  max-height: 30vh;
-  transition: 0.5s ease;
-}
-
-.phone-li {
-  margin: 1rem;
-  font-weight: 100;
-  border-bottom: 2px solid #eeeeee;
-}
-
 .container{
   width: 80vw;
   height: 20vh;
@@ -101,6 +10,14 @@ nav {
 
 h1{
   margin-left: 20px;
+}
+
+.fill{
+  margin-left: 20px;
+}
+
+.fill-list-hide{
+  display: none;
 }
 
 .input-1{
