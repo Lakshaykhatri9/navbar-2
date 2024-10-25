@@ -4,22 +4,7 @@
     }
 }
 
-
-@media (max-width: 980px) {
-    .desktop-nav{
-      display: none;
-    }
-}
-
 @media (min-width: 979px) {
-    .phone-nav{
-        display: none;
-    }
-
-    .hamburger{
-        display: none;
-    }
-
     .container{
         left: 18%;
     }
@@ -50,6 +35,11 @@
     }
 
     .form-group select {
+        width: 88vw;
+        margin: 0.5rem;
+      }
+
+      .measure{
         width: 88vw;
         margin: 0.5rem;
       }
