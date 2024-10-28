@@ -229,7 +229,7 @@
         <li>Weight Measurement</li>
         <li>Captcha</li>
       </ul>
-      <form action="">
+      <form action="" onsubmit="newPage(event)">
         <input type="text" placeholder="First Name" required class="input-1" />
         <input type="text" placeholder="Last Name" required class="input-1" />
         <input type="date" placeholder="Date" required class="input-1" />
@@ -326,6 +326,12 @@
           fill.classList.remove("fill-list-hide");
         }
       });
+
+      function newPage(event){
+        event.preventDefault();
+
+        window.location.href = "http://api.zoconut.com/clinic/v1/add_dieter/"
+      }
     </script>
   </body>
 </html>
