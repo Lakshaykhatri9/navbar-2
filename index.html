@@ -13,7 +13,6 @@
         margin: auto;
         position: absolute;
         top: 5%;
-        z-index: -100;
         padding-bottom: 70rem;
       }
 
@@ -52,10 +51,43 @@
       }
 
       .gender {
-        margin-left: 20px;
+        margin: 20px;
+        display: block;
       }
 
       #Male {
+        margin-left: 20px;
+      }
+
+      #female {
+        margin-left: 20px;
+      }
+
+      #other {
+        margin-left: 20px;
+      }
+
+      #Facebook{
+        margin-left: 20px;
+      }
+
+      #google{
+        margin-left: 20px;
+      }
+
+      #instagram{
+        margin-left: 20px;
+      }
+
+      #twitter{
+        margin-left: 20px;
+      }
+
+      #newspaper{
+        margin-left: 20px;
+      }
+
+      #friend{
         margin-left: 20px;
       }
 
@@ -197,7 +229,7 @@
         <li>Weight Measurement</li>
         <li>Captcha</li>
       </ul>
-      <form>
+      <form action="">
         <input type="text" placeholder="First Name" required class="input-1" />
         <input type="text" placeholder="Last Name" required class="input-1" />
         <input type="date" placeholder="Date" required class="input-1" />
@@ -211,28 +243,28 @@
 
         <div class="container-2">
           <div>
-            <p class="gender">Gender</p>
+            <label for="source" class="gender">Gender</label>
             <input type="checkbox" name="Male" id="Male" />
             <label for="checkbox">Male</label> <br />
-            <input type="checkbox" name="Male" id="Male" />
+            <input type="checkbox" name="Male" id="female" />
             <label for="checkbox">Female</label> <br />
-            <input type="checkbox" name="Male" id="Male" />
+            <input type="checkbox" name="Male" id="other" />
             <label for="checkbox">Other</label>
           </div>
 
           <div class="source">
-            <p class="gender">Source</p>
-            <input type="checkbox" name="Facebook" id="Male" />
+            <label for="source" class="gender">Source</label>
+            <input type="checkbox" name="Facebook" id="Facebook" />
             <label for="checkbox">Facebook</label> <br />
-            <input type="checkbox" name="Google" id="Male" />
+            <input type="checkbox" name="Google" id="google" />
             <label for="checkbox">Google</label> <br />
-            <input type="checkbox" name="Instagram" id="Male" />
+            <input type="checkbox" name="Instagram" id="instagram" />
             <label for="checkbox">Instagram</label> <br />
-            <input type="checkbox" name="Twitter" id="Male" />
+            <input type="checkbox" name="Twitter" id="twitter" />
             <label for="checkbox">Twitter</label> <br />
-            <input type="checkbox" name="NewsPaper" id="Male" />
+            <input type="checkbox" name="NewsPaper" id="newspaper" />
             <label for="checkbox">Newspaper</label> <br />
-            <input type="checkbox" name="Friend" id="Male" />
+            <input type="checkbox" name="Friend" id="friend" />
             <label for="checkbox">Friend</label>
           </div>
         </div>
@@ -241,7 +273,7 @@
         <input type="text" placeholder="Country" required class="input-1" />
         <input type="text" placeholder="State" required class="input-1" />
         <input type="text" placeholder="City" required class="input-1" />
-        <input type="text" placeholder="Pin Code" required class="input-1" />
+        <input type="number" placeholder="Pin Code" required class="input-1" />
         <input type="text" placeholder="Height" required class="input-1" />
         <select
           id="Height-Measurement"
@@ -280,9 +312,7 @@
           </select>
         </div>
 
-        <button id="submit-btn">
-          <a href="http://api.zoconut.com/clinic/v1/add_dieter/">Submit</a>
-        </button>
+       <a href="http://api.zoconut.com/clinic/v1/add_dieter/"><input type="submit" value="Submit" id="submit-btn" ></a> 
       </form>
     </div>
 
