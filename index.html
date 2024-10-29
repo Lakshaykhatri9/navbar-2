@@ -231,7 +231,11 @@
       <form action="" onsubmit="newPage(event)">
         <input type="text" placeholder="First Name" required class="input-1" />
         <input type="text" placeholder="Last Name" required class="input-1" />
-        <input type="date" id="date-input" onfocus="(this.type='date')" onblur="setPlaceholder(this)" class="input-1"/>
+        <input type="text" 
+           placeholder="MM/DD/YYYY"
+           onfocus="(this.type='date')"
+           onblur="(this.type='text')"
+           class="input-1">
         <input
           type="number"
           placeholder="Phone Number"
@@ -272,21 +276,21 @@
               type="checkbox"
               name="Facebook"
               id="Facebook"
-              class="single-checkbox"
+              class="single-checkbox-2"
             />
             <label for="checkbox">Facebook</label> <br />
             <input
               type="checkbox"
               name="Google"
               id="google"
-              class="single-checkbox"
+              class="single-checkbox-2"
             />
             <label for="checkbox">Google</label> <br />
             <input
               type="checkbox"
               name="Instagram"
               id="instagram"
-              class="single-checkbox"
+              class="single-checkbox-2"
             />
             <label for="checkbox">Instagram</label> <br />
             <input type="checkbox" name="Twitter" id="twitter" />
@@ -295,14 +299,14 @@
               type="checkbox"
               name="NewsPaper"
               id="newspaper"
-              class="single-checkbox"
+              class="single-checkbox-2"
             />
             <label for="checkbox">Newspaper</label> <br />
             <input
               type="checkbox"
               name="Friend"
               id="friend"
-              class="single-checkbox"
+              class="single-checkbox-2"
             />
             <label for="checkbox">Friend</label>
           </div>
@@ -373,6 +377,7 @@
       }
 
       const checkboxes = document.querySelectorAll(".single-checkbox");
+      const checkboxes2 = document.querySelectorAll(".single-checkbox-2");
 
       checkboxes.forEach((checkbox) => {
         checkbox.addEventListener("change", () => {
@@ -386,15 +391,17 @@
         });
       });
 
-      function setPlaceholder(input) {
-    if (!input.value) {
-        input.type = "text";  // Change back to text type
-        input.placeholder = "Birthday";  // Add a placeholder
-    }
-}
-
-// Initialize the placeholder when the page loads
-document.getElementById("date-input").placeholder = "Birthday";
+      checkboxes2.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            checkboxes2.forEach((otherCheckbox) => {
+              if (otherCheckbox !== checkbox) {
+                otherCheckbox.checked = false;
+              }
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>
