@@ -67,27 +67,27 @@
         margin-left: 20px;
       }
 
-      #Facebook{
+      #Facebook {
         margin-left: 20px;
       }
 
-      #google{
+      #google {
         margin-left: 20px;
       }
 
-      #instagram{
+      #instagram {
         margin-left: 20px;
       }
 
-      #twitter{
+      #twitter {
         margin-left: 20px;
       }
 
-      #newspaper{
+      #newspaper {
         margin-left: 20px;
       }
 
-      #friend{
+      #friend {
         margin-left: 20px;
       }
 
@@ -244,27 +244,67 @@
         <div class="container-2">
           <div>
             <label for="source" class="gender">Gender</label>
-            <input type="checkbox" name="Male" id="Male" />
+            <input
+              type="checkbox"
+              name="Male"
+              id="Male"
+              class="single-checkbox"
+            />
             <label for="checkbox">Male</label> <br />
-            <input type="checkbox" name="Male" id="female" />
+            <input
+              type="checkbox"
+              name="Male"
+              id="female"
+              class="single-checkbox"
+            />
             <label for="checkbox">Female</label> <br />
-            <input type="checkbox" name="Male" id="other" />
+            <input
+              type="checkbox"
+              name="Male"
+              id="other"
+              class="single-checkbox"
+            />
             <label for="checkbox">Other</label>
           </div>
 
           <div class="source">
             <label for="source" class="gender">Source</label>
-            <input type="checkbox" name="Facebook" id="Facebook" />
+            <input
+              type="checkbox"
+              name="Facebook"
+              id="Facebook"
+              class="single-checkbox"
+            />
             <label for="checkbox">Facebook</label> <br />
-            <input type="checkbox" name="Google" id="google" />
+            <input
+              type="checkbox"
+              name="Google"
+              id="google"
+              class="single-checkbox"
+            />
             <label for="checkbox">Google</label> <br />
-            <input type="checkbox" name="Instagram" id="instagram" />
+            <input
+              type="checkbox"
+              name="Instagram"
+              id="instagram"
+              class="single-checkbox"
+            />
             <label for="checkbox">Instagram</label> <br />
             <input type="checkbox" name="Twitter" id="twitter" />
             <label for="checkbox">Twitter</label> <br />
-            <input type="checkbox" name="NewsPaper" id="newspaper" />
+            <input
+              type="checkbox"
+              name="NewsPaper"
+              id="newspaper"
+              class="single-checkbox"
+            />
             <label for="checkbox">Newspaper</label> <br />
-            <input type="checkbox" name="Friend" id="friend" />
+            <input
+              type="checkbox"
+              name="Friend"
+              id="friend"
+              class="single-checkbox"
+            />
             <label for="checkbox">Friend</label>
           </div>
         </div>
@@ -312,7 +352,7 @@
           </select>
         </div>
 
-      <input type="submit" value="Submit" id="submit-btn" >
+        <input type="submit" value="Submit" id="submit-btn" />
       </form>
     </div>
 
@@ -327,11 +367,25 @@
         }
       });
 
-      function newPage(event){
+      function newPage(event) {
         event.preventDefault();
 
-        window.location.href = "http://api.zoconut.com/clinic/v1/add_dieter/"
+        window.location.href = "http://api.zoconut.com/clinic/v1/add_dieter/";
       }
+
+      const checkboxes = document.querySelectorAll(".single-checkbox");
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) {
+            checkboxes.forEach((otherCheckbox) => {
+              if (otherCheckbox !== checkbox) {
+                otherCheckbox.checked = false;
+              }
+            });
+          }
+        });
+      });
     </script>
   </body>
 </html>
