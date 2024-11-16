@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
     <style>
       .container {  
         width: 80vw !important;        ;
@@ -228,42 +226,43 @@
         <li>Weight Measurement</li>
         <li>Captcha</li>
       </ul>
-      <form action="" onsubmit="newPage(event)">
-        <input type="text" placeholder="First Name" required class="input-1" />
-        <input type="text" placeholder="Last Name" required class="input-1" />
+      <form method="post" id="form">
+        <input type="text" placeholder="First Name" required class="input-1" name="firstname"/>
+        <input type="text" placeholder="Last Name" required class="input-1" name="lastname"/>
         <input type="text" 
            placeholder="DD/MM/YYYY"
            onfocus="(this.type='date')"
            onblur="(this.type='text')"
-           class="input-1">
+           class="input-1" name="date">
         <input
           type="number"
           placeholder="Phone Number"
           required
           class="input-1"
+          name="phonenumber"
         />
-        <input type="email" placeholder="Email" required class="input-2" />
+        <input type="email" placeholder="Email" required class="input-2" name="email"/>
 
         <div class="container-2">
           <div>
             <label for="source" class="gender">Gender</label>
             <input
               type="checkbox"
-              name="Male"
+              name="male"
               id="Male"
               class="single-checkbox"
             />
             <label for="checkbox">Male</label> <br />
             <input
               type="checkbox"
-              name="Male"
+              name="female"
               id="female"
               class="single-checkbox"
             />
             <label for="checkbox">Female</label> <br />
             <input
               type="checkbox"
-              name="Male"
+              name="other"
               id="other"
               class="single-checkbox"
             />
@@ -274,37 +273,37 @@
             <label for="source" class="gender">Source</label>
             <input
               type="checkbox"
-              name="Facebook"
+              name="facebook"
               id="Facebook"
               class="single-checkbox-2"
             />
             <label for="checkbox">Facebook</label> <br />
             <input
               type="checkbox"
-              name="Google"
+              name="google"
               id="google"
               class="single-checkbox-2"
             />
             <label for="checkbox">Google</label> <br />
             <input
               type="checkbox"
-              name="Instagram"
+              name="instagram"
               id="instagram"
               class="single-checkbox-2"
             />
             <label for="checkbox">Instagram</label> <br />
-            <input type="checkbox" name="Twitter" id="twitter" />
+            <input type="checkbox" name="twitter" id="twitter" />
             <label for="checkbox">Twitter</label> <br />
             <input
               type="checkbox"
-              name="NewsPaper"
+              name="newspaper"
               id="newspaper"
               class="single-checkbox-2"
             />
             <label for="checkbox">Newspaper</label> <br />
             <input
               type="checkbox"
-              name="Friend"
+              name="friend"
               id="friend"
               class="single-checkbox-2"
             />
@@ -312,16 +311,16 @@
           </div>
         </div>
 
-        <input type="text" placeholder="Address" required class="input-2" />
-        <input type="text" placeholder="Country" required class="input-1" />
-        <input type="text" placeholder="State" required class="input-1" />
-        <input type="text" placeholder="City" required class="input-1" />
-        <input type="number" placeholder="Pin Code" required class="input-1" />
-        <input type="number" placeholder="Height" required class="input-1" />
+        <input type="text" placeholder="Address" required class="input-2" name="address"/>
+        <input type="text" placeholder="Country" required class="input-1" name="country"/>
+        <input type="text" placeholder="State" required class="input-1" name="state"/>
+        <input type="text" placeholder="City" required class="input-1" name="city"/>
+        <input type="number" placeholder="Pin Code" required class="input-1" name="pincode"/>
+        <input type="number" placeholder="Height" required class="input-1" name="height"/>
         <select
-          id="Height-Measurement"
+          id="height-measurement"
           class="measure"
-          name="Height Measurement"
+          name="height-measurement"
           class="input-1"
         >
           <option value="Height Measurement">Height Measurement</option>
@@ -329,11 +328,11 @@
           <option value="Inches">Inches</option>
           <option value="Centimeters">Centimeters</option>
         </select>
-        <input type="number" placeholder="Weight" required class="input-1" />
+        <input type="number" placeholder="Weight" name="weight" required class="input-1" />
         <select
           id="Weight-Measurement"
           class="measure"
-          name="Weight Measurement"
+          name="weight-measurement"
           class="input-1"
         >
           <option value="Weight Measurement">Weight Measurement</option>
@@ -344,37 +343,37 @@
         <div class="form-group">
           <select id="blood-group" name="blood-group">
             <option value="Blood Group">Blood Group</option>
-            <option value="A+">A+</option>
-            <option value="A-">A-</option>
-            <option value="B+">B+</option>
-            <option value="B-">B-</option>
-            <option value="O+">O+</option>
-            <option value="O-">O-</option>
-            <option value="AB+">AB+</option>
-            <option value="AB-">AB-</option>
+            <option value="A+" name="aa">A+</option>
+            <option value="A-" name="ab">A-</option>
+            <option value="B+" name="ac">B+</option>
+            <option value="B-" name="ad">B-</option>
+            <option value="O+" name="ae">O+</option>
+            <option value="O-" name="af">O-</option>
+            <option value="AB+" name="ag">AB+</option>
+            <option value="AB-" name="ah">AB-</option>
           </select>
         </div>
 
-        <input type="submit" value="Submit" id="submit-btn" />
+        <button id="submit-btn" name="btn">Submit</button>
       </form>
     </div>
 
     <script>
-      let btn = document.querySelector("#submit-btn");
-      let fill = document.querySelector(".fill-list");
-      let input = document.querySelector("input");
+      // let btn = document.querySelector("#submit-btn");
+      // let fill = document.querySelector(".fill-list");
+      // let input = document.querySelector("input");
 
-      btn.addEventListener("click", () => {
-        if (input.innerText === "") {
-          fill.classList.remove("fill-list-hide");
-        }
-      });
+      // btn.addEventListener("click", () => {
+      //   if (input.innerText === "") {
+      //     fill.classList.remove("fill-list-hide");
+      //   }
+      // });
 
-      function newPage(event) {
-        event.preventDefault();
+      //  function newPage(event) {
+      //    event.preventDefault();
 
-        window.location.href = "http://api.zoconut.com/clinic/v1/add_dieter/";
-      }
+      //    window.location.href = "http://api.zoconut.com/clinic/v1/add_dieter/";
+      //  }
 
       const checkboxes = document.querySelectorAll(".single-checkbox");
       const checkboxes2 = document.querySelectorAll(".single-checkbox-2");
@@ -401,6 +400,19 @@
             });
           }
         });
+      });
+
+      let url = 'https://script.google.com/macros/s/AKfycbxAJSZZCjOCaeoQ5R70PN3lB0kQ-tk8xMSzOGqFt91_syDNmZBkR4r-e-1oPhoPjbEWvg/exec';
+      let form = document.querySelector("#form");
+      form.addEventListener("submit", (e) => {
+        e.target.btn.innerHTML = "Thank you Submitting";
+        let d = new FormData(form);
+        fetch(url,{
+          method: "POST",
+          body:d,
+        }).then((res)=> res.text()).then((finalRes) =>{
+           console.log(finalRes)})
+        e.preventDefault();
       });
     </script>
   </body>
