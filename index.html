@@ -401,19 +401,6 @@
           }
         });
       });
-
-      let url = 'https://script.google.com/macros/s/AKfycbxAJSZZCjOCaeoQ5R70PN3lB0kQ-tk8xMSzOGqFt91_syDNmZBkR4r-e-1oPhoPjbEWvg/exec';
-      let form = document.querySelector("#form");
-      form.addEventListener("submit", (e) => {
-        e.target.btn.innerHTML = "Thank you Submitting";
-        let d = new FormData(form);
-        fetch(url,{
-          method: "POST",
-          body:d,
-        }).then((res)=> res.text()).then((finalRes) =>{
-           console.log(finalRes)})
-        e.preventDefault();
-      });
     </script>
   </body>
 </html>
